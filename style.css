@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1877F2;
+    font-family: 'Baloo 2', cursive;
+}
+.header{
+    background-color: #ffff00  ;
+    padding: 0.3rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar i{
+    padding-right:0.7rem ;
+}
+
+.section{
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0.1px 0.1px 12px 15px;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.conversion-option select{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.converter-name{
+    display: flex;
+    margin: 2rem 0px ;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-child input{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.input-child select{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.equal-to{
+    padding: 1rem;
+}
+.formula-area{
+    margin-top: 2rem;
+}
+.formula-area h3{
+    border: 2px solid transparent ;
+    padding: 0px 1rem;
+    background-color: #fefe33 ;
+    border-radius: 6px;
+}
+.formula-area p{
+    padding: 1rem;
+
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .section{
+        height: 400px ;
+    }
+    .conversion-option select{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .converter-name h1{
+        font-size: 1rem;
+    }
+    .input-child input{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .input-child select{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .equal-to{
+        padding: 0.6rem;
+    }
+}

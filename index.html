@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S21k Converter</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <i class="bi bi-emoji-smile-fill"></i>
+            <div class="logoname">
+                S21k Converter
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="container-box section">
+            <div class="conversion-option">
+                <select name="" id="chooseConverter" onchange="populate(this.id,'optionSelectLeft','optionSelectRight')">
+                    <option value="Temperature">Temperature</option>
+                    <option value="Area">Area</option>
+                    <option value="DataTransferRate">Data Transfer Rate</option>
+                    <option value="Digital Storage">Digital Storage</option>
+                    <option value="Energy">Energy</option>
+                    <option value="Frequency">Frequency</option>
+                    <option value="Fuel Economy">Fuel Economy</option>
+                    <option value="Length">Length</option>
+                    <option value="Mass">Mass</option>
+                    <option value="Plane Angle">Plane Angle</option>
+                    <option value="Pressure">Pressure</option>
+                    <option value="Speed">Speed</option>
+                    <option value="Time">Time</option>
+                    <option value="Volume">Volume</option>
+                </select>
+            </div>
+            <div class="converter-name">
+                <h1 id="conversionName">Temperature</h1>
+                <h1><span> &nbsp; Converter</span></h1>
+            </div>
+
+            <div class="input-box">
+                <!-- ---------------------- Temperature ------------------- -->
+                <!-- ---------------------- Left side ------------------- -->
+
+                <div class="temp-child-js input-child ">
+                    <input type="number"  name="lInput" id="inputLeftDefault">
+                    <select name="leftOption" id="SelectLeftDefault">
+                        <option value="Celsius">Celsius</option>
+                        <option value="Faherenheit">Faherenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                    <input class="hidden" type="number"  name="lInput" id="inputLeft">
+                    <select class="hidden" name="tempSelectLeft" id="optionSelectLeft"></select>
+                </div>
+                <!-- ----------------------------------------  Equal to ------------------------------------------------ -->
+
+                <div id="equalTo" class="equal-to">
+                    <h1>=</h1>
+                </div>
+                <!-- ---------------------- right side ------------------- -->
+                <div class="temp-child-js input-child ">
+                    <input type="number" name="lInput" id="inputRightDefault">
+                    <select name="rightOption" id="SelectRightDefault">
+                        <option value="Faherenheit">Faherenheit</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                    <input class="hidden" type="number" name="lInput" id="inputRight">
+                    <select class="hidden" name="tempSelectRight" id="optionSelectRight">
+                        <!-- <option value="Faherenheit">Faherenheit</option>
+                        <option value="Celsius">Celsius</option>
+                        <option value="Kelvin">Kelvin</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="formula-area">
+                <h3>Formula :</h3>
+                <p id="formulaPrev"></p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
