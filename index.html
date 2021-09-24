@@ -23,10 +23,10 @@
     <main class="main">
         <section class="container-box section">
             <div class="conversion-option">
-                <select name="" id="chooseConverter" onchange="populate(this.id,'optionSelectLeft','optionSelectRight')">
+                <select name="" id="chooseConverter" onchange="populate(this.id,'SelectLeftManual','SelectRightManual','conversionName')">
                     <option value="Temperature">Temperature</option>
                     <option value="Area">Area</option>
-                    <option value="DataTransferRate">Data Transfer Rate</option>
+                    <option value="Data Transfer Rate">Data Transfer Rate</option>
                     <option value="Digital Storage">Digital Storage</option>
                     <option value="Energy">Energy</option>
                     <option value="Frequency">Frequency</option>
@@ -57,7 +57,7 @@
                         <option value="Kelvin">Kelvin</option>
                     </select>
                     <input class="hidden" type="number"  name="lInput" id="inputLeft">
-                    <select class="hidden" name="tempSelectLeft" id="optionSelectLeft"></select>
+                    <select class="hidden" name="tempSelectLeft" id="SelectLeftManual"></select>
                 </div>
                 <!-- ----------------------------------------  Equal to ------------------------------------------------ -->
 
@@ -73,11 +73,7 @@
                         <option value="Kelvin">Kelvin</option>
                     </select>
                     <input class="hidden" type="number" name="lInput" id="inputRight">
-                    <select class="hidden" name="tempSelectRight" id="optionSelectRight">
-                        <!-- <option value="Faherenheit">Faherenheit</option>
-                        <option value="Celsius">Celsius</option>
-                        <option value="Kelvin">Kelvin</option> -->
-                    </select>
+                    <select class="hidden" name="tempSelectRight" id="SelectRightManual"></select>
                 </div>
             </div>
             <div class="formula-area">
